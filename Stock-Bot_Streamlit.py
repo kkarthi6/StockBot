@@ -15,6 +15,7 @@ except ImportError:
     
 # Imporitng and setting up Selenium
 # import selenium
+import selenium
 from selenium import webdriver 
 options = webdriver.ChromeOptions()
 options.add_argument('headless')
