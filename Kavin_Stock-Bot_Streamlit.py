@@ -16,9 +16,9 @@ except ImportError:
 # Imporitng and setting up Selenium
 import selenium
 from selenium import webdriver 
-options = webdriver.ChromeOptions('https://github.com/kkarthi6/StockBot/blob/d994180ae5d7b651e9a21ba1b67b84d8540e5d28/chromedriver.exe')
+options = webdriver.ChromeOptions()
 options.add_argument('headless')
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome('https://github.com/kkarthi6/StockBot/blob/90fd0e6eb43c1225e77abe2de254c3bb30bbd1ff/chromedriver.exe',options=options)
 
 #Function to download the file as csv
 def csv_downloader(data,name):
