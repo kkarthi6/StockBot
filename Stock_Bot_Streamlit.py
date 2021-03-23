@@ -53,7 +53,7 @@ elif choice == "NASDAQ 100":
     st.dataframe(df)
     csv_downloader(df,"NASDAQ100")
     
- elif choice == "Dow 30":
+elif choice == "Dow 30":
     st.subheader("Dow 30")
     df = pd.read_html('https://finance.yahoo.com/quote/%5EDJI/history?p=%5EDJI')[0]
     st.dataframe(df)
