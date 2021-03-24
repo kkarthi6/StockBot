@@ -73,8 +73,8 @@ def main():
         
         st.markdown("### References and documentation ###")
         st.write("[Streamlit](https://docs.streamlit.io/en/stable/)")
-        st.write("[Streamlit](https://docs.streamlit.io/en/stable/)")
-        st.write("[Streamlit](https://docs.streamlit.io/en/stable/)")
+        st.write("[Pandas_Read HTML](https://pandas.pydata.org/docs/reference/api/pandas.read_html.html)")
+        st.write("[Data source](https://finance.yahoo.com)")
         st.markdown("---")
         
         st.markdown(" ### To report bugs and request features ### ")
