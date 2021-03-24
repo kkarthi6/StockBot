@@ -70,16 +70,15 @@ def main():
         st.markdown("## About ##")
         st.write("Thanks for visiting stockbot !!!")
         st.markdown("---")
-        st.markdown("  ")
+        
         st.markdown("### References and documentation ###")
         st.write("[Streamlit](https://docs.streamlit.io/en/stable/)")
         st.write("[Streamlit](https://docs.streamlit.io/en/stable/)")
         st.write("[Streamlit](https://docs.streamlit.io/en/stable/)")
         st.markdown("---")
-        st.markdown("  ")
-        st.markdown(" ## To report bugs and request features ## ")
-        st.write("Mail me at:")
-        st.markdown("# kkarthi6@asu.edu #")
+        
+        st.markdown(" ### To report bugs and request features ### ")
+        st.markdown("Mail Me at # kkarthi6@asu.edu #")
         
 if __name__ == '__main__':
     main()
