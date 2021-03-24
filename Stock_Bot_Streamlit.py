@@ -21,8 +21,6 @@ def csv_downloader(data,name):
 
 # Streamlit app
 def main():
-    
-    st.markdown("---")
     st.sidebar.markdown("---")
     st.sidebar.markdown("App developed by")
     st.sidebar.markdown("Kavin Karthikeyan")  
@@ -31,12 +29,13 @@ def main():
     st.sidebar.write("[Linkedin](https://www.linkedin.com/in/kavin-karthikeyan/)")
     st.sidebar.write("[Github](https://github.com/kkarthi6)")
     st.sidebar.write("[Twitter](https://twitter.com/kkarthi96)")
-
+    
+    st.markdown("---")
+    menu = ["Home","S&P 500","NASDAQ 100","Dow 30","About"]
+    choice = st.selectbox("App navigator",menu)
+        
     
     if choice == "Home":
-        st.markdown("---")
-        menu = ["Home","S&P 500","NASDAQ 100","Dow 30","About"]
-        choice = st.selectbox("App navigator",menu)
         st.markdown("---")
         st.markdown("# Stock Bot #")
         st.markdown("### Stock Bot lets you view and download data for top US indexes :money_with_wings: ###")
@@ -67,6 +66,9 @@ def main():
         st.write("Thanks for visiting stockbot")
         st.markdown("### References and documentation ###")
         st.write([Streamlit]('https://docs.streamlit.io/en/stable/'))
+        st.markdown(" ## To report bugs and request features ## ")
+        st.write("Mail me at:")
+        st.markdown("# kkarthi6@asu.edu #")
         
 if __name__ == '__main__':
     main()
