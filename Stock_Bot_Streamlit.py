@@ -14,7 +14,7 @@ def csv_downloader(data,name):
     b64 = base64.b64encode(csvfile.encode()).decode()
     timestr = time.strftime("%Y%m%d")
     timestr = name+timestr
-    new_filename = "StockBot_{}_.csv".format(timestr)
+    new_filename = "StockBot_{}.csv".format(timestr)
     st.markdown("### Download as CSV ###")
     href = f'<a href = "data:file/csv;base64,{b64}" download = "{new_filename}">Click here to download your file!</a>'
     st.markdown(href,unsafe_allow_html=True)
