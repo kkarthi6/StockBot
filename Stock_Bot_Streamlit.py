@@ -78,7 +78,7 @@ def main():
         st.markdown("---")
         
         st.markdown(" ### To report bugs and request features ### ")
-        st.markdown("Mail Me at # kkarthi6@asu.edu #")
+        st.markdown("## Mail Me at: kkarthi6@asu.edu ##")
         
 if __name__ == '__main__':
     main()
