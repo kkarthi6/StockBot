@@ -21,7 +21,7 @@ def csv_downloader(data,name):
 
 # Streamlit app
 def main():
-    
+    st.sidebar.markdown("---")
     st.sidebar.title("Use the drop down to select index")
     st.sidebar.markdown("---")
     menu = ["Home","S&P 500","NASDAQ 100","Dow 30","About"]
@@ -32,8 +32,7 @@ def main():
     st.sidebar.markdown("  ")
     st.sidebar.markdown("---")
     st.sidebar.markdown("App developed by")
-    st.sidebar.markdown("Kavin Karthikeyan")  
-    st.sidebar.markdown("---")
+    st.sidebar.markdown("Kavin Karthikeyan")
     st.sidebar.markdown("### Connect with me! ###")
     st.sidebar.write("[Linkedin](https://www.linkedin.com/in/kavin-karthikeyan/)")
     st.sidebar.write("[Github](https://github.com/kkarthi6)")
@@ -43,34 +42,41 @@ def main():
     if choice == "Home":
         st.markdown("---")
         st.markdown("# Stock Bot #")
+        st.markdown("---")
         st.markdown("### Stock Bot lets you view and download data for top US indexes :money_with_wings: ###")
         st.image("https://images.unsplash.com/photo-1468254095679-bbcba94a7066?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1498&q=80",
-        width=350)
+        width=500)
         
         
     elif choice == "S&P 500":
         st.subheader("S&P 500")
         df = pd.read_html('https://finance.yahoo.com/quote/%5EGSPC/history?p=%5EGSPC')[0]
         st.dataframe(df)
-        csv_downloader(df,"_S&P500")
+        csv_downloader(df,"_S&P500_")
 
     elif choice == "NASDAQ 100":
         st.subheader("NASDAQ 100")
         df = pd.read_html('https://finance.yahoo.com/quote/%5EIXIC/history?p=%5EIXIC')[0]
         st.dataframe(df)
-        csv_downloader(df,"_NASDAQ100")
+        csv_downloader(df,"_NASDAQ100_")
 
     elif choice == "Dow 30":
         st.subheader("Dow 30")
         df = pd.read_html('https://finance.yahoo.com/quote/%5EDJI/history?p=%5EDJI')[0]
         st.dataframe(df)
-        csv_downloader(df,"_Dow30")
+        csv_downloader(df,"_Dow30_")
 
     else:
         st.markdown("## About ##")
-        st.write("Thanks for visiting stockbot")
+        st.write("Thanks for visiting stockbot !!!")
+        st.markdown("---")
+        st.markdown("  ")
         st.markdown("### References and documentation ###")
-        st.markdown([Streamlit]('https://docs.streamlit.io/en/stable/'))
+        st.write("[Streamlit](https://docs.streamlit.io/en/stable/)")
+        st.write("[Streamlit](https://docs.streamlit.io/en/stable/)")
+        st.write("[Streamlit](https://docs.streamlit.io/en/stable/)")
+        st.markdown("---")
+        st.markdown("  ")
         st.markdown(" ## To report bugs and request features ## ")
         st.write("Mail me at:")
         st.markdown("# kkarthi6@asu.edu #")
