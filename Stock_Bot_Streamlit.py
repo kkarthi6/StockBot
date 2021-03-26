@@ -21,8 +21,7 @@ def csv_downloader(data,name):
 
 # Streamlit app
 def main():
-    st.sidebar.markdown("---")
-    st.sidebar.title("Use the drop down to select index")
+    
     st.sidebar.markdown("---")
     menu = ["Home","S&P 500","NASDAQ 100","Dow 30","About"]
     choice = st.sidebar.selectbox("App navigator",menu)
@@ -33,7 +32,6 @@ def main():
     st.sidebar.markdown("---")
     st.sidebar.markdown("App developed by")
     st.sidebar.markdown("Kavin Karthikeyan")
-    st.sidebar.markdown("### Connect with me! ###")
     st.sidebar.write("[Linkedin](https://www.linkedin.com/in/kavin-karthikeyan/)")
     st.sidebar.write("[Github](https://github.com/kkarthi6)")
     st.sidebar.write("[Twitter](https://twitter.com/kkarthi96)")
@@ -46,6 +44,8 @@ def main():
         st.markdown("### Stock Bot lets you view and download data for top US indexes :money_with_wings: ###")
         st.image("https://images.unsplash.com/photo-1468254095679-bbcba94a7066?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1498&q=80",
         width=500)
+        st.markdown("---")
+        st.write("Use the app navigator to select index")
         
         
     elif choice == "S&P 500":
