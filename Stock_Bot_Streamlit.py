@@ -51,7 +51,7 @@ def main():
     elif choice == "S&P 500":
         st.subheader("S&P 500")
         df = pd.read_html('https://finance.yahoo.com/quote/%5EGSPC/history?p=%5EGSPC')[0]
-        st.line_chart(df)
+        #st.line_chart(df)
         st.dataframe(df)
         csv_downloader(df,"_S&P500_")
 
