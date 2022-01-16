@@ -1,5 +1,6 @@
 import html5lib
 import pip
+import bs4
 from subprocess import call
 
 packages=['numpy','pandas','base64','time','html5lib']
@@ -60,20 +61,20 @@ def main():
         
     elif choice == "S&P 500":
         st.subheader("S&P 500")
-        df = pd.read_html('https://finance.yahoo.com/quote/%5EGSPC')[0]
+        df = pd.read_html('http://finance.yahoo.com/quote/%5EGSPC')[0]
         #st.line_chart(df)
         st.dataframe(df)
         csv_downloader(df,"_S&P500_")
 
     elif choice == "NASDAQ 100":
         st.subheader("NASDAQ 100")
-        df = pd.read_html('https://finance.yahoo.com/quote/%5EIXIC/history?p=%5EIXIC')[0]
+        df = pd.read_html('http://finance.yahoo.com/quote/%5EIXIC/history?p=%5EIXIC')[0]
         st.dataframe(df)
         csv_downloader(df,"_NASDAQ100_")
 
     elif choice == "Dow 30":
         st.subheader("Dow 30")
-        df = pd.read_html('https://finance.yahoo.com/quote/%5EDJI/history?p=%5EDJI')[0]
+        df = pd.read_html('http://finance.yahoo.com/quote/%5EDJI/history?p=%5EDJI')[0]
         st.dataframe(df)
         csv_downloader(df,"_Dow30_")
 
