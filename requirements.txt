@@ -1,5 +1,6 @@
-streamlit==0.79.0
-pandas==1.2.3
-numpy==1.20.1
-lxml==4.5.2
+streamlit
+pandas
+numpy
+lxml
+bs4
 html5lib
