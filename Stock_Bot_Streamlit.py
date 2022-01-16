@@ -1,3 +1,4 @@
+$ pip install --upgrade streamlit
 
 # Importing  necessary dependencies
 import numpy as np
