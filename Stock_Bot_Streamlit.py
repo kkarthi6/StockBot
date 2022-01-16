@@ -1,4 +1,12 @@
-$ pip install --upgrade streamlit
+import html5lib
+import pip
+from subprocess import call
+
+packages=['numpy','pandas','base64','time','html5lib']
+
+def upgrade(packages):
+    for package in packages:
+        call("pip install --upgrade " + package, shell=True)
 
 # Importing  necessary dependencies
 import numpy as np
